@@ -1,34 +1,12 @@
-# A custom nbconvert template
-This is an example of how to package an nbconvert template. Use this repo to create your own pip-installable template.
+# Custom nbconvert Template
+**nbconvert templates** can automate **styling** and **consistency** in your company's exported jupyter notebooks. To create your own, you can clone this package. If you'd like some instructions, you can follow my 10 minute [step-by-step guide]().
 
-## Structure of the package
-Te package is structured as follows:
-```
-├── README.md
-├── pyproject.toml
-├── setup.cfg
-├── setup.py
-└── share
-    └── jupyter
-        └── nbconvert
-            └── templates
-                └── ACBcompany
-                    ├── conf.json
-                    ├── logo.svg
-                    ├── index.html.j2
-                    └── static
-                        └── index.css
-```
+## 📦 Packaging
+In my experience, nbconvert templates are most useful if **packaged**. This allows every team to access them 24/7. Clone this repository to get a ready-to-use template. Then modify it to fit your needs.
 
-## Installation
-To install this template create a vitrual environment and then pip install it from GitHub.
-```bash
-pip install git+https://github.com/jlondonob nbconvert-ABCcompany-template
-```
+## ♻️ Workflow
+This is the workflow I use at my company:
 
-## Usage
-Add the `--template==ABCcompany` option to your export commond.
-
-```bash
-jupyter nbconvert mynotebook.ipynb --to html --template=ACBcompany
-```
+1. Store the package as a private GitHub repo.
+2. Install it [using pip](https://docs.readthedocs.io/en/stable/guides/private-python-packages.html).
+3. Convert notebook using the `--template` argument!
