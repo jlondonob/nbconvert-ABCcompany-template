@@ -11,12 +11,11 @@ except:
 
 
 pjoin = os.path.join
-jupyter_core_paths.jupyter_config_dir()
 
 class DevelopCmd(develop):
     prefix_targets = [
         # prefix target and name of the template
-        ("nbconvert/templates", 'human')
+        ("nbconvert/templates", 'ABCcompany')
     ]
     def run(self):
         # sys.prefix: environment path if active, else directory where python files installed
@@ -53,6 +52,9 @@ setup_args = {
     'author':"José Londoño",
     'author_email': "jose@humanld.io",
     'url': 'https://github.com/HumanLD/nbconvert-ABCcompany-template',
+    'options': {
+        'bdist_wheel': {'universal':'1'}
+        },
     'cmdclass': {
         'develop': DevelopCmd,
     } if jupyter_core_paths else {},
