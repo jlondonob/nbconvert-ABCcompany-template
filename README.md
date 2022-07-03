@@ -1,8 +1,10 @@
-# Custom nbconvert Template
-Improve the **styling** and **consistency** of your exported jupyter notebooks using nbconvert templates. Clone this repository to get a ready-to-use packaged template. You can find customization instructions in my 10 minute [step-by-step guide]().
+# Custom nbconvert template
+Improve **styling** and **consistency** in your exported jupyter notebooks. Clone this repository to get a ready-to-use packaged template. You can learn to cusomize it in my 10 minute [step-by-step guide]().
+
+![template_example](https://user-images.githubusercontent.com/43001823/177047693-483eae3c-cc84-4e0f-89ec-40701ffacab3.png)
 
 ## 📦 Packaging
-Packaged templates are the most powerful. They are available for every person in your organization on a 24/7 basis. Clone this repository to get a ready-to-use packaged template. Then modify it to fit your needs.
+Packaged templates are the most powerful. They are available for every person in your organization on a 24/7 basis. Clone this repository to get a ready-to-use packaged template, then modify it to fit your needs.
 
 ## ♻️ Workflow with a packaged template
 This is the workflow I use:
